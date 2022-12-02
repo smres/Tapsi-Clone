@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'badr';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/+\ Badr_p30download.com.woff') format('woff2')
+}
+
+@font-face {
+    font-family: 'zahed';
+    font-weight: bolder;
+    font-style: normal;
+    src: url('/assets/fonts/Zahed_Dal_p30download.com.woff') format('woff2')
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    font-family: "zahed";
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    /* font-family: "zahed"; */
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: 0;
+    border: 1px solid #c4b5fd;
+    box-shadow: 0 0 0 4px #f5f3ff;
+
+    /* transition: border 0.2s, box-shadow 0.2s; */
+    transition: all 0.2s;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: "badr";
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    border: 0;
+    background-color: #a78bfa;
+    color: #fff;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    transition: transform 2s ease-in 0.5s, background-color 1s linear 0.2s;
+}
+
+.box:hover {
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+h1 {
+    color: red;
+    letter-spacing: 1rem;
+    font-family: cursive;
+    text-shadow: 40px 50px 1px green, 80px 90px 2px rgb(0, 200, 255), 120px 130px 3px lightpink;
+    transition: all 0.5s ease-in-out;
+}
+
+h1:hover {
+    color: red;
+    letter-spacing: 1rem;
+    font-family: cursive;
+    text-shadow: -40px -50px 1px green, -80px -90px 2px orange, -120px -130px 3px lightpink;
+}

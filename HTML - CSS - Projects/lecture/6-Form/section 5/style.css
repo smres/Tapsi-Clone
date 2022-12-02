@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'badr';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/+\ Badr_p30download.com.woff') format('woff2')
+}
+
+@font-face {
+    font-family: 'zahed';
+    font-weight: bolder;
+    font-style: normal;
+    src: url('/assets/fonts/Zahed_Dal_p30download.com.woff') format('woff2')
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    font-family: "zahed";
+    height: 100vh;
+    padding: 1rem;
+}
+
+form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+datalist {
+    position: absolute;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    font-family: sans-serif;
+    width: 350px;
+    padding: 5px;
+
+}
+
+option {
+    background-color: white;
+    padding: 4px;
+    color: blue;
+    margin-bottom: 1px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+option:hover,
+.active {
+    background-color: lightblue;
+}
+
+optgroup {
+    color: red;
+}

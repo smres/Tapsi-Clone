@@ -1,0 +1,10 @@
+p {
+    border: 2px solid gold;
+    padding: 5px 10px 20px 30px;
+    margin: 20px;
+}
+h2 {
+    margin: 30px;
+}
+
+/* box-model , margin-collapse */

@@ -1,0 +1,17 @@
+.product-linear {
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(30deg, blue, red, gold, green)
+}
+
+.product-radial {
+    width: 350px;
+    height: 300px;
+    background: radial-gradient(circle, blue, red, gold, green)
+}
+
+.product-repeating-linear {
+    width: 350px;
+    height: 300px;
+    background: repeating-linear-gradient(to bottom left, #ff2800 0px, #ff2800 15px, #a71900 15px, #a71900 30px)
+}

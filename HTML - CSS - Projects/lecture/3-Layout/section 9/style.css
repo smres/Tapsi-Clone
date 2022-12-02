@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+/* Example 1 Style Float CSS */
+.Pedar {
+    background-color: #2196F3;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.Farzand-1 {
+    background-color: orange;
+    border: 2px solid red;
+    width: 50%;
+    padding: 5px;
+    float: left;
+}
+
+.Farzand-2 {
+    background-color: orange;
+    border: 2px solid red;
+    border-left: none;
+    width: 50%;
+    padding: 5px;
+    float: left;
+}
+
+.all-items {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================= */
+/* Example 2 Style Float CSS */
+.exam-2 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100%;
+}
+
+.div-all {
+    float: right;
+    width: 15rem;
+    height: 15rem;
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-one {
+    background-color: blue;
+}
+
+.div-two {
+    background-color: rgb(26, 255, 0);
+}
+
+.div-three {
+    background-color: rgb(255, 0, 0);
+}
+
+/* ================================= */
+/* Example 3 Style Float CSS */
+img {
+    float: right;
+    margin-left: 10px;
+}

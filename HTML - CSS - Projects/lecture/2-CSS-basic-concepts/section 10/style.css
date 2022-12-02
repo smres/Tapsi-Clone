@@ -1,0 +1,11 @@
+.product {
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    border-radius: 10px;
+    box-shadow: 10px 20px 60px rgba(0, 0, 255, 0.7);
+}
+
+h2 {
+    text-shadow: 3px 3px 3px rgba(0, 255, 0, 0.5), 13px 13px 3px rgba(255, 72, 0, 0.5);
+}

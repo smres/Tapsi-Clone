@@ -1,0 +1,47 @@
+#products :first-child {
+    font-style: italic;
+}
+
+#products ul li:last-child {
+    font-weight: bold;
+}
+
+/* #products>.product-item:last-of-type {
+    color: rgb(129, 216, 112);
+} */
+#products :last-of-type {
+    color: rgb(129, 216, 112);
+}
+
+
+/* ul :nth-child(2n) {
+    color: red;
+} */
+/* ul :nth-child(2n+1) {
+    color: red;
+} */
+/* ul :nth-child(3n) {
+    color: red;
+} */
+ul :nth-child(even) {
+    color: red;
+}
+
+ul li:nth-child(odd) {
+    color: gold;
+    background-color: plum;
+}
+
+a:visited,
+a:link {
+    color: rgb(134, 160, 245);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: darkmagenta;
+}

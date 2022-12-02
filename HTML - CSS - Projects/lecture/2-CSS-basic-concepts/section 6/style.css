@@ -1,0 +1,14 @@
+p {
+    color: orchid;
+    font-weight: bold;
+    border: 2px solid red;
+}
+
+span {
+    color: initial;
+    border: inherit;
+}
+
+p::first-letter {
+    font-size: 50px;
+}

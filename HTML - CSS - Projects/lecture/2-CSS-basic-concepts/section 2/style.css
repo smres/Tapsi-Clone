@@ -1,0 +1,31 @@
+#products p {
+    background-color: lightgreen;
+}
+
+#products>p {
+    color: coral;
+}
+
+#products+p {
+    color: rgb(255, 255, 255);
+}
+
+#products~p {
+    background-color: cornflowerblue;
+}
+
+article>p {
+    font-weight: bold;
+}
+
+a[href*="fronthooks"] {
+    color: red;
+}
+
+a[href^="https://"] {
+    background-color: aqua;
+}
+
+a[href$=".ir"] {
+    font-style: italic;
+}

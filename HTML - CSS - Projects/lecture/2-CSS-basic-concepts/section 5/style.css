@@ -1,0 +1,27 @@
+h2 {
+    color: blueviolet;
+}
+.title {
+    color: gold;
+}
+#course-title {
+    color: green;
+}
+h2#course-title {
+    color: brown;
+}
+.title#course-title {
+    color: darkturquoise;
+}
+h2.title#course-title {
+    color: orange;
+}
+section#products #course-title {
+    color: fuchsia;
+}
+#products .title{
+    color: rgb(105, 25, 62);
+}
+.title-big {
+    background-color: green;
+}

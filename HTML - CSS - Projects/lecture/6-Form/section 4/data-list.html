@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" list="courses" autocomplete="off" />
+
+      <input
+        autocomplete="off"
+        list=""
+        id="input"
+        name="browsers"
+        placeholder="Select your fav browser"
+      />
+      <datalist id="browsers1">
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Safari">Safari</option>
+        <option value="Microsoft Edge">Microsoft Edge</option>
+        <option value="Firefox">Firefox</option>
+      </datalist>
+
+      <datalist id="courses">
+        <option data-value="0">Vue.js</option>
+        <option data-value="1">React.js</option>
+        <option data-value="2">Angular.js</option>
+      </datalist>
+    </form>
+  </body>
+
+  <script>
+    input.onfocus = function () {
+      browsers1.style.display = "block";
+      input.style.borderRadius = "5px 5px 0 0";
+    };
+    for (let option of browsers1.options) {
+      option.onclick = function () {
+        input.value = option.value;
+        browsers1.style.display = "none";
+        input.style.borderRadius = "15px";
+      };
+    }
+  </script>
+</html>

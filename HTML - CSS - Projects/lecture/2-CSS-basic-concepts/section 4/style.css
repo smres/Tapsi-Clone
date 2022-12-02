@@ -1,0 +1,20 @@
+p::first-letter {
+    font-size: 40px !important;
+}
+
+p::before {
+    /* content: url('/images/Wallpaper1.jpg'); */
+    background-image: url('/images/Wallpaper1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 200px;
+    content: "";
+}
+
+p::after {
+    content: "...";
+    color: brown;
+    font-size: 40px;
+}

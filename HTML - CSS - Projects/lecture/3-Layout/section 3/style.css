@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* 62.5 * 16px = 10px */
+}
+
+body {
+    height: 100vh;
+    background-color: #ff0000;
+}
+
+/* .parent-box {
+    width: 300px;
+    background-color: #fff;
+} */
+.box {
+    /* em : font-size of current element */
+    /* rem : font-size of root element */
+
+    font-size: 3.5rem;
+    width: 10rem;
+    height: 50%;
+    background-color: gold;
+}

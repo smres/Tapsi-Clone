@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    height: 200vh;
+    background-color: #f6f6f6;
+}
+
+.box {
+    border: 2px solid gray;
+    position: relative;
+    margin-top: 100px;
+    height: 400px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.item-one {
+    background-color: orange;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.item-two {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.item-three {
+    background-color: violet;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.item-four {
+    background-color: rgb(28, 255, 50);
+    position: relative;
+    top: 20px;
+    left: 30px;
+}

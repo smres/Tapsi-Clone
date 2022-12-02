@@ -1,0 +1,45 @@
+* , *::before , *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html {
+    font-size: 75%;
+}
+ body {
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.items {
+    border: 2px solid gray;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    border: 2px solid black;
+}
+.item-one {
+    height: 20%;
+    width: 100%;
+    background-color: violet;
+}
+.items-chid-2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+.item-two {
+    height: 20%;
+    width: 50%;
+    background-color: rgb(64, 255, 0);
+    flex-basis: 80%;
+}
+.item-three {
+    height: 20%;
+    width: 50%;
+    background-color: rgb(98, 63, 255);
+}

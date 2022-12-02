@@ -1,0 +1,72 @@
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+}
+
+.product {
+    margin-top: 30px;
+    border-left: 5px solid rgb(173, 173, 173);
+    background-color: aqua;
+}
+
+.product-1 {
+    margin-top: 30px;
+    border-width: 1px 5px 1px 1px;
+    border-style: groove;
+    border-right-color: brown;
+    background-color: rgb(86, 237, 109);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border: 3px solid;
+    background-color: orange;
+    border-radius: 100%;
+}
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.ridge {
+    border-style: ridge;
+}
+
+p.inset {
+    border-style: inset;
+}
+
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted solid double dashed;
+}

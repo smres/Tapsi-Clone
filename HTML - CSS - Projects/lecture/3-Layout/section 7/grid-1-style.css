@@ -1,0 +1,44 @@
+* , *::before , *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* flex-box example */
+.block2 {
+    display: flex;
+}
+.box{
+    width: 50%;
+    height: 100px;
+    background-color: orange;
+    margin:10px
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.box-one {
+    width: 97%;
+}
+/* =========================== */
+/* grid-box example */
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 150px);
+    grid-template-rows: 150px 150px;
+    justify-items: center;
+    align-items:center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: 100vh;
+}
+.box-grid {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+.box-a {
+    align-self: flex-end;
+}

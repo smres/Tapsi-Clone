@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'badr';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/+\ Badr_p30download.com.woff') format('woff2')
+}
+
+@font-face {
+    font-family: 'zahed';
+    font-weight: bolder;
+    font-style: normal;
+    src: url('/assets/fonts/Zahed_Dal_p30download.com.woff') format('woff2')
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    font-family: "zahed";
+    padding: 1rem;
+    height: 100vh;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    /* font-family: "zahed"; */
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: 0;
+    border: 1px solid #c4b5fd;
+    box-shadow: 0 0 0 4px #f5f3ff;
+
+    /* transition: border 0.2s, box-shadow 0.2s; */
+    transition: all 0.2s;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: "badr";
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    border: 0;
+    background-color: #a78bfa;
+    color: #fff;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 10px;
+    transition: transform 2s ease-in 0.5s, background-color 1s linear 0.2s;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    /* from {
+        transform: rotate(0) scale(1.5);
+    }
+
+    to {
+        transform: rotate(360deg);
+    } */
+
+    /* ==================================== */
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5) rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(60deg) skew(40deg);
+        background-color: rgb(224, 54, 240);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.img-slice {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 1000px;
+    border: 5px dotted white;
+    background-image: linear-gradient(to bottom, orange, red);
+    transition: all .4s;
+}
+
+.img-lice__item {
+    transition: all .4s;
+}
+
+.img-slice::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(81, 61, 235);
+    left: 0;
+}
+
+.img-slice:hover .img-lice__item:nth-child(odd) {
+    transform: rotate(-5deg) scale(0.9) translateX(5rem);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+}
+
+.img-slice:hover .img-lice__item:nth-child(even) {
+    transform: rotate(5deg) scale(0.9) translateX(-5rem);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+}
+
+p {
+
+    font-size: 2rem;
+}
+
+p::selection {
+    color: red;
+    background-color: lightgreen;
+}

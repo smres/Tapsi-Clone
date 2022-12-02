@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://folan.api.com/users" method="GET">
+      <input
+        name="firstName"
+        type="text"
+        required
+        minlength="3"
+        maxlength="10"
+      />
+      <input type="number" min="5" max="17" />
+      <input
+        type="email"
+        oninvalid="this.setCustomValidity('Enter User Name Here')"
+        oninput="this.setCustomValidity('')"
+        placeholder="exam@gmail.com"
+      />
+      <a href="mailto:smr8012101067@gmail.com, cc=hih">mailto</a>
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+
+  <script>
+    oninput = "this.setCustomValidity('')";
+  </script>
+</html>

@@ -1,0 +1,35 @@
+* , *::before , *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@font-face {
+    font-family: 'badr';
+    font-weight: 400;
+    font-style: normal;
+    src:  url('/assets/fonts/+\ Badr_p30download.com.woff') format('woff2')
+  }
+@font-face {
+    font-family: 'zahed';
+    font-weight: bolder;
+    font-style: normal;
+    src:  url('/assets/fonts/Zahed_Dal_p30download.com.woff') format('woff2')
+  }
+html {
+    font-size: 75%;
+}
+ body {
+     font-family: "badr";
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+.container {
+    height: 200vh;
+    background-color: gold;
+    background: url("/images/Wallpaper1.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

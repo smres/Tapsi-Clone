@@ -1,0 +1,39 @@
+* , *::before , *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html {
+    font-size: 75%;
+}
+ body {
+    height: 200vh;
+    background-color: #f6f6f6;
+}
+p{
+    background-color: gold;
+    padding: 10px;
+}
+.container :first-child {
+    background-color: blueviolet;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .container {
+        flex-direction: row !important;
+    }
+}
+@media screen and (min-width: 1223px) {
+    .container {
+        flex-direction: row !important;
+    }
+}
+@media print  {
+    .container {
+        font-size: 14px;
+    }
+}

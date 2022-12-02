@@ -1,0 +1,55 @@
+.parent {
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+/* if flex-direction == row then
+    justify-content => main
+    align-items => cross
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item1 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.item2 {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    order: 2;
+}
+
+.item3 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    order: 1;
+}
+
+.item4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(70, 109, 216);
+    order: 3;
+}
+
+/* flex : axis=> main , cross */
+
+/* main محور: if flex-direction == row => محور افقی */
+/* cross محور : if flex-direction == row => محور عمودی */
+
+/* main محور: if flex-direction == column => محور عمودی */
+/* cross محور : if flex-direction == column => محور افقی */

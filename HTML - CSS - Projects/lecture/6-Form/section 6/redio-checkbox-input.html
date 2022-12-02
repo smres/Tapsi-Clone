@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <select>
+        <option value="" selected disabled hidden>select a course</option>
+        <optgroup label="front-end courses">
+          <option value="0">Vue.js</option>
+          <option value="1">React.js</option>
+          <option value="2">Angular.js</option>
+        </optgroup>
+        <optgroup label="back-end courses">
+          <option value="3">Node.js</option>
+          <option value="4">Laravel.js</option>
+        </optgroup>
+      </select>
+
+      <div>
+        <input type="checkbox" id="front-end" name="intersts" value="0" />
+        <label for="front-end">front-end</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          checked
+          id="back-end"
+          name="intersts"
+          value="1"
+        />
+        <label for="back-end">back-end</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male" value="0" />
+        <label for="male">male</label>
+      </div>
+      <div>
+        <input type="radio" checked name="gender" id="female" value="1" />
+        <label for="female">female</label>
+      </div>
+    </form>
+  </body>
+</html>

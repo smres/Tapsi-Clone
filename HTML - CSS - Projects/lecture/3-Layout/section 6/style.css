@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    height: 200vh;
+    background-color: #f6f6f6;
+}
+
+/* Items Styles */
+.items {
+    border: 2px solid gray;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.item {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(84, 240, 37);
+}
+
+.item-one {
+    align-self: flex-start;
+}
+
+/* Itemes 1 Styles */
+.items-1 {
+    border: 2px solid gray;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Itemes 2 Styles */
+.items-2 {
+    border: 2px solid gray;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-2 {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 145, 37);
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.item-one-2 {
+    align-self: flex-end;
+    flex-grow: 2;
+    flex-shrink: 3;
+    /* flex: 2 3 200px; */
+}
